@@ -1,0 +1,50 @@
+\documentclass[A4]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage[ruled,linesnumbered]{algorithm2e}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{color}
+\usepackage{scrextend}
+
+\usepackage[a4paper, margin=1in]{geometry}
+
+
+\usepackage[backend=bibtex, sorting=none]{biblatex}
+
+\addbibresource{ref.bib}
+
+\usepackage{titlesec}
+\titlespacing*{\section}{0pt}{10pt}{0pt}
+
+\usepackage{fancyhdr}
+\fancyfoot{}
+\fancyhead[RO,LE]{\thepage}
+\fancyhead[LO]{\leftmark}
+\fancyhead[RE]{\rightmark}
+\pagestyle{fancy}
+\renewcommand{\baselinestretch}{1.5}
+ 
+\begin{document}
+	\paragraph{{\Huge\textbf{Capstone Proposal}} \\ \textnormal{Joe Udacity \\ December 31st, 2050}}
+	
+	\paragraph{{\Huge\textbf{Proposal}}\\ \textnormal{(approx. 2-3 pages)}}
+	
+	%-----SECTIONS START HERE
+		\setcounter{page}{1}
+		\input{./sections/DomainBackground}
+		\input{./sections/ProblemStatement}
+		\input{./sections/DatasetsInputs}
+		\input{./sections/SolutionStatement}
+		\input{./sections/Benchmark}
+		\input{./sections/'EvaluationMetric}
+		\input{./sections/ProjectDesign}
+		\input{./sections/Recomendation} %REMOVE when you start
+		\pagebreak
+		\printbibliography
+		
+		% \section*{Appendix}
+		
+\end{document}
